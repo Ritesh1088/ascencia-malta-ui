@@ -1,0 +1,143 @@
+.contact-page {
+  overflow-x: hidden;
+}
+
+/* HERO IMAGE */
+.contact-hero-image {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.contact-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CONTACT US TEXT ON IMAGE */
+.contact-hero-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;   /* White text on image */
+  animation: slideRight 2s ease forwards;
+}
+
+.contact-hero-text h2 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+/* PARAGRAPH BELOW IMAGE */
+.contact-intro {
+  padding: 60px 15%;
+  background: white;
+  text-align: center;
+}
+
+.contact-intro p {
+  font-size: 22px;     /* Bigger text */
+  color: black;        /* Black color */
+  line-height: 1.7;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Animation */
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translate(200px, -50%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+}
+
+/* FORM */
+.contact-form-section {
+  padding: 100px 10%;
+  background: #f5f9ff;
+}
+
+.contact-form {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.phone-input {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 16px;
+}
+
+.phone-container {
+  width: 100%;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.checkbox {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.contact-form button {
+  padding: 15px;
+  background: #002147;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #00c6ff;
+  color: #002147;
+}
+
+/* MAP */
+.map-section {
+  margin-top: 50px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .contact-hero-text {
+    left: 5%;
+  }
+
+  .contact-hero-text h2 {
+    font-size: 32px;
+  }
+
+  .contact-intro p {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+}

@@ -1,0 +1,69 @@
+.footer {
+  background: #002147;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 10%;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  max-width: 300px;
+}
+
+.socials span {
+  display: block;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.socials span:hover {
+  color: #00c6ff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.3);
+}
+
+@media (max-width: 768px) {
+
+  .director-content,
+  .about-content,
+  .tutors,
+  .campus-cards,
+  .form-row {
+    flex-direction: column;
+  }
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .hero-overlay {
+    left: 5%;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+}
