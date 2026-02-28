@@ -61,7 +61,7 @@ const Navbar = () => {
 
             <div className="menu-right">
               <img src="/images/business-campus.jpeg" alt="Campus" />
-              <img src="/images/university-building.jpg" alt="University" />
+              <img src="/images/classroom modern.jpg" alt="University" />
             </div>
 
           </div>

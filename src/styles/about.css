@@ -1,8 +1,10 @@
 .about-page {
   overflow-x: hidden;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-/* HERO */
+/* ================= HERO ================= */
+
 .about-hero {
   position: relative;
   height: 70vh;
@@ -22,32 +24,78 @@
   animation: fadeLeft 1.5s ease-in-out;
 }
 
-/* INTRO */
+/* ================= INTRO ================= */
+
 .about-intro {
-  padding: 60px 20%;
+  padding: 80px 20%;
   text-align: center;
   background: #f5f9ff;
   font-size: 18px;
+  line-height: 1.7;
 }
 
-/* ABOUT CONTENT */
+/* ================= ABOUT + MISSION ================= */
+
 .about-content {
   display: flex;
-  padding: 80px 10%;
-  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 10%;
+  gap: 80px;
 }
 
 .about-text {
   flex: 1;
 }
 
-.about-images img {
-  width: 400px;
-  border-radius: 20px;
-  animation: floatImage 4s infinite ease-in-out;
+.about-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #002147;
 }
 
-/* VALUES */
+.about-highlight {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #004aad;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.mission-title {
+  margin-top: 40px;
+}
+
+/* ================= IMAGE ================= */
+
+.about-images {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-images img {
+  width: 500px;
+  border-radius: 25px;
+  transition: 0.6s ease;
+  filter: brightness(70%);
+}
+
+/* Hover Brightness Effect */
+
+.about-images img:hover {
+  filter: brightness(100%);
+  transform: scale(1.05);
+}
+
+/* ================= VALUES ================= */
+
 .values {
   padding: 100px 20px;
   background: linear-gradient(135deg, #002147, #004aad);
@@ -67,7 +115,7 @@
   background: white;
   color: #002147;
   padding: 30px;
-  width: 250px;
+  width: 260px;
   border-radius: 15px;
   transition: 0.4s;
 }
@@ -76,56 +124,77 @@
   transform: translateY(-10px);
 }
 
-/* TUTORS */
+/* ================= TUTORS ================= */
+
 .tutors {
   display: flex;
   padding: 100px 10%;
   align-items: center;
-  gap: 50px;
+  gap: 60px;
 }
 
 .tutors img {
-  width: 400px;
+  width: 450px;
   border-radius: 20px;
 }
 
-/* JOIN US */
+/* ================= JOIN US ================= */
+
 .join-us {
   padding: 100px 20px;
   text-align: center;
   background: linear-gradient(135deg, #004aad, #00c6ff);
   color: white;
-  animation: pulse 3s infinite;
 }
 
-@keyframes pulse {
-  0% { background-position: left; }
-  50% { background-position: right; }
-  100% { background-position: left; }
+/* ================= ANIMATIONS ================= */
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-@media (max-width: 768px) {
+/* ================= RESPONSIVE ================= */
 
-  .director-content,
+@media (max-width: 992px) {
+
   .about-content,
-  .tutors,
-  .campus-cards,
-  .form-row {
+  .tutors {
     flex-direction: column;
-  }
-
-  .navbar {
-    padding: 0 20px;
-  }
-
-  .hero-overlay {
-    left: 5%;
-  }
-
-  .footer {
-    flex-direction: column;
-    gap: 30px;
     text-align: center;
+  }
+
+  .about-images img {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 40px;
+  }
+
+  .tutors img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .about-intro {
+    padding: 60px 10%;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .about-highlight {
+    font-size: 26px;
+  }
+
+  .about-text p {
+    font-size: 16px;
   }
 
 }

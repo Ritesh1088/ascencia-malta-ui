@@ -25,31 +25,46 @@ const About = () => {
 
       {/* ABOUT + MISSION */}
       <section className="about-content">
+
         <div className="about-text">
           <h2>About</h2>
+
+          <h3 className="about-highlight">
+            A participative and innovative pedagogy
+          </h3>
+
           <p>
-            Our training courses are based on a participative and innovative pedagogy based on the value 
-            of the example and the constant exchange between learners and experienced professionals. 
-            The realities of corporate life are at the heart of the personalized learning methods we use. 
-            They are intended to identify potentials and to hatch vocations of managers and business 
-            developers. Our campus is also open to all international candidates who wish to study 
-            management in Malta.
+            Our training courses are based on a participative and innovative pedagogy 
+            based on the value of the example and the constant exchange between learners 
+            and experienced professionals. The realities of corporate life are at the 
+            heart of the personalized learning methods we use.
           </p>
 
-          <h2>Mission</h2>
           <p>
-            At Ascencia Malta, we empower students through a student-centered approach that fosters 
-            critical thinking, creativity, and lifelong learning. We deliver high-quality education 
-            that meets rigorous standards and prepares graduates for success in a dynamic world. 
-            Together with our partnered stakeholders, we are dedicated to developing socially 
-            responsible leaders who champion diversity, inclusion, and equity, creating meaningful 
-            impact within our diverse community. 
+            They are intended to identify potentials and to hatch vocations of managers 
+            and business developers. Our campus is also open to all international 
+            candidates who wish to study management in Malta.
+          </p>
+
+          <h2 className="mission-title">Mission</h2>
+
+          <p>
+            At Ascencia Malta, we empower students through a student-centered approach 
+            that fosters critical thinking, creativity, and lifelong learning.
+            We deliver high-quality education that meets rigorous standards and prepares 
+            graduates for success in a dynamic world.
+          </p>
+
+          <p>
+            Together with our partnered stakeholders, we are dedicated to developing 
+            socially responsible leaders who champion diversity, inclusion, and equity.
           </p>
         </div>
 
         <div className="about-images">
           <img src="/images/services3.jpg" alt="Service" />
         </div>
+
       </section>
 
       {/* VALUES SECTION */}
